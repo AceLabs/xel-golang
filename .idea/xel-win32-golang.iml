@@ -2,7 +2,15 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/xel-core.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/win32/xel-win32.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/win32/xel-win32.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/win32/xel-win32-handle-messages.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/win32/xel-win32-handle-messages.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel-window.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel-window.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />

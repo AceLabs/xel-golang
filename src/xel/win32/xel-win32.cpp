@@ -1,9 +1,13 @@
 #include <windows.h>
+#include <cstdio>
 
-#include "xel-win32.h"
+#include <GL/glew.h>
+
 #include "../xel-window.h"
 
+#include "xel-win32.h"
 #include "xel-win32-handle-messages.h"
+#include "xel-win32-gl.h"
 
 using namespace xel;
 using namespace xel::win32;
@@ -12,12 +16,14 @@ LRESULT CALLBACK Win32_WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
 
 namespace xel {
     namespace win32 {
+
+        HWND g_hwnd;
+
         namespace _ {
-            HWND g_hwnd;
 
             void registerWindowClass(WNDPROC wndProc);
-            HWND createMainWindowEx();
             bool isMouseMsg(UINT msg);
+            HWND createMainWindowEx();
         }
     }
 }
@@ -108,12 +114,26 @@ LRESULT CALLBACK Win32_WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam
     else if (msg == WM_SIZE)
         win32::_::handleResize(LOWORD(lParam), HIWORD(lParam));
 
+    else if (msg == WM_CREATE) {
+        gl::createGLContext();
+
+        glewInit();
+
+        printf("OpenGL/GLEW context created\n");
+    }
+
     else if (msg == WM_CLOSE) {
-        //todo xel::window::_::g_onBeforeGLDeleted();
+        if (window::_::g_onBeforeGLDeleted)
+            window::_::g_onBeforeGLDeleted();
 
-        //todo WinOs::GL::Delete(hwnd);
+        printf("Deleting OpenGL context...\n");
+        gl::deleteGLContext();
 
-        return DefWindowProc(hwnd, msg, wParam, lParam);
+        printf("Destroying Window...\n");
+        DestroyWindow(g_hwnd);
+
+        printf("Unregistering Window Class...\n");
+        UnregisterClass("AceWindowClass", GetModuleHandle(0));
     }
     else if (msg == WM_DESTROY) {
          PostQuitMessage(0);

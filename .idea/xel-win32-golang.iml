@@ -9,11 +9,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-core.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-enums.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-gl.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-handle-messages.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-handle-messages.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-keyboard-util.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-handle-messages.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-gl.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-window.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-enums.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-keyboard.h" isTestSource="false" />
@@ -30,12 +32,14 @@
           <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include-fixed" />
           <root url="file://C:/MinGW/mingw32/include" />
           <root url="file://C:/MinGW/include" />
+          <root url="file://$MODULE_DIR$/../lib" />
         </CLASSES>
         <SOURCES>
           <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include" />
           <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include-fixed" />
           <root url="file://C:/MinGW/mingw32/include" />
           <root url="file://C:/MinGW/include" />
+          <root url="file://$MODULE_DIR$/../lib" />
         </SOURCES>
       </library>
     </orderEntry>

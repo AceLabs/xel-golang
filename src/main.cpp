@@ -25,15 +25,18 @@ void OnMouseScroll(int amount) {
 }
 
 void OnResize(int w, int h) {
+    printf("OnResize %i %i\n",w,h);
 }
 
 void OnTick() {
 }
 
 void Init() {
+    printf("Init\n");
 }
 
 void Uninit() {
+    printf("Uninit\n");
 }
 
 int main(int argc, char** argv) {

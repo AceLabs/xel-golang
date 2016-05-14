@@ -4,6 +4,9 @@
 #include "xel-enums.h"
 #include "xel-window.h"
 
+// binding friendly function calls
+void xel_window_setPosition(int left, int top);
+
 namespace xel {
 
     void init();

@@ -25,6 +25,10 @@ namespace xel {
 
 using namespace xel::win32::_;
 
+void win32::setPosition(int left, int top) {
+    SetWindowPos(g_hwnd, 0, left, top, -1, -1, SWP_NOZORDER | SWP_NOSIZE | SWP_SHOWWINDOW);
+}
+
 void win32::createMainWindow() {
     registerWindowClass(Win32_WndProc);
 

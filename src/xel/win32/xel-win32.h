@@ -3,6 +3,7 @@
 
 namespace xel {
     namespace win32 {
+        void setPosition(int left, int top);
         void createMainWindow();
         unsigned long long virtualCodeToXCode(unsigned long long vcode);
     }

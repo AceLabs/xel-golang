@@ -43,6 +43,8 @@ int main(int argc, char** argv) {
     xel::keyboard::setCallbacks(OnKeyDown, OnKeyUp);
     xel::mouse::setCallbacks(OnMouseMove, OnMouseButton, OnMouseScroll);
 
+    xel_window_setPosition(400,200);
+
     xel::loop( OnTick );
 
     xel::uninit();

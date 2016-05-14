@@ -1,4 +1,5 @@
 #include "xel.h"
+#include "win32/xel-win32.h"
 
 using namespace xel;
 using namespace xel::window::_;
@@ -26,4 +27,9 @@ void window::setCallbacks(
     // since gl context is created at xel::init(), it should be safe to call this.
     if (onAfterGLCreated)
         onAfterGLCreated();
+}
+
+void xel_window_setPosition(int left, int top) {
+
+    xel::win32::setPosition(left,top);
 }

@@ -10,4 +10,4 @@ namespace xel {
     }
 }
 
-#endif //XEL_WIN32_GOLANG_XEL_WINDOW_H
+#endif

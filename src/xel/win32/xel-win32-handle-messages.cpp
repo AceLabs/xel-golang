@@ -1,4 +1,3 @@
-#include <cstdio>
 #include <afxres.h>
 #include <windowsx.h>
 

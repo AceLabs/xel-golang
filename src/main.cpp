@@ -37,6 +37,7 @@ void Uninit() {
 }
 
 int main(int argc, char** argv) {
+
     xel::init();
 
     xel::window::setCallbacks(OnResize, Init, Uninit);

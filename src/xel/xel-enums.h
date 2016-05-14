@@ -13,4 +13,4 @@ namespace xel {
     }
 }
 
-#endif //XEL_WIN32_GOLANG_XEL_ENUMS_H_H
+#endif

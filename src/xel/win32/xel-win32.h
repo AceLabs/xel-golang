@@ -3,6 +3,8 @@
 
 namespace xel {
     namespace win32 {
+
+        void setTitle(const char* title);
         void setPosition(int left, int top);
         void setSize(int width, int height);
 

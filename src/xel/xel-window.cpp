@@ -38,3 +38,8 @@ void xel_window_setSize(int width, int height) {
 
     xel::win32::setSize(width, height);
 }
+
+void xel_window_setTitle(const char* title) {
+
+    xel::win32::setTitle(title);
+}

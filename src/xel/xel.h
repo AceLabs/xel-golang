@@ -2,11 +2,7 @@
 #define XEL_WIN32_GOLANG_XEL_H
 
 #include "xel-window.h"
-
-// binding friendly function calls
-void xel_window_setTitle(const char* title);
-void xel_window_setPosition(int left, int top);
-void xel_window_setSize(int width, int height);
+#include "xel-binding.h"
 
 namespace xel {
 

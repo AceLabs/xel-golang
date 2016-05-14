@@ -7,6 +7,7 @@ namespace xel {
         void setTitle(const char* title);
         void setPosition(int left, int top);
         void setSize(int width, int height);
+        void close();
 
         void createMainWindow();
         unsigned long long virtualCodeToXCode(unsigned long long vcode);

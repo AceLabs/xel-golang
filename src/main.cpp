@@ -10,6 +10,7 @@ void OnKeyDown(unsigned long long xcode) {
 
 void OnKeyUp(unsigned long long xcode) {
     printf("key up %i\n", xcode);
+    xel_quit();
 }
 
 void OnMouseMove(int x, int y) {

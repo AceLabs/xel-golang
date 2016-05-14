@@ -12,7 +12,6 @@ void xel::init() {
 }
 
 void xel::uninit() {
-
 }
 
 void xel::loop(void (*tickCallback)()) {
@@ -30,4 +29,8 @@ void xel::loop(void (*tickCallback)()) {
         // Resize must have been called once
         tickCallback();
     }
+}
+
+void xel_quit() {
+    win32::close();
 }

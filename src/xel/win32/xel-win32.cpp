@@ -42,6 +42,10 @@ void win32::setSize(int width, int height) {
     SetWindowPos(g_hwnd, 0, -1, -1, width, height, SWP_NOZORDER | SWP_NOMOVE | SWP_SHOWWINDOW);
 }
 
+void win32::close() {
+    PostMessage(g_hwnd, WM_CLOSE, 0, 0);
+}
+
 void win32::createMainWindow() {
     registerWindowClass(Win32_WndProc);
 

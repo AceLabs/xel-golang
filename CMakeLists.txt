@@ -17,7 +17,7 @@ set(SOURCE_FILES_XEL_INPUT_H src/xel/xel-keyboard.h src/xel/xel-keyboard-codes.h
 set(SOURCE_FILES_XEL_INPUT_CPP src/xel/xel-keyboard.cpp src/xel/xel-mouse.cpp src/xel/xel-keyboard-codes.cpp)
 
 set(SOURCE_FILES_XEL_WIN32_H src/xel/win32/xel-win32.h src/xel/win32/xel-win32-handle-messages.h)
-set(SOURCE_FILES_XEL_WIN32_CPP src/xel/win32/xel-win32.cpp src/xel/win32/xel-win32-handle-messages.cpp src/xel/win32/xel-win32-keyboard-util.cpp src/xel/xel-enums.cpp src/xel/win32/xel-win32-gl.h src/xel/win32/xel-win32-gl.cpp)
+set(SOURCE_FILES_XEL_WIN32_CPP src/xel/win32/xel-win32.cpp src/xel/win32/xel-win32-handle-messages.cpp src/xel/win32/xel-win32-keyboard-util.cpp src/xel/xel-enums.cpp src/xel/win32/xel-win32-gl.h src/xel/win32/xel-win32-gl.cpp src/xel/xel-binding.h)
 
 add_definitions(-DGLEW_STATIC)
 

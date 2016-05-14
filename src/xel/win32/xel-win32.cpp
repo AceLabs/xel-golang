@@ -1,5 +1,4 @@
 #include <windows.h>
-#include <cstdio>
 
 #include "xel-win32.h"
 #include "../xel-window.h"

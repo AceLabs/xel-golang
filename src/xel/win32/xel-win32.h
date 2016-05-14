@@ -4,6 +4,8 @@
 namespace xel {
     namespace win32 {
         void setPosition(int left, int top);
+        void setSize(int width, int height);
+
         void createMainWindow();
         unsigned long long virtualCodeToXCode(unsigned long long vcode);
     }

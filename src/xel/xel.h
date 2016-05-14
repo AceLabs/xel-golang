@@ -6,6 +6,7 @@
 
 // binding friendly function calls
 void xel_window_setPosition(int left, int top);
+void xel_window_setSize(int width, int height);
 
 namespace xel {
 

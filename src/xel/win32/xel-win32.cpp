@@ -29,6 +29,10 @@ void win32::setPosition(int left, int top) {
     SetWindowPos(g_hwnd, 0, left, top, -1, -1, SWP_NOZORDER | SWP_NOSIZE | SWP_SHOWWINDOW);
 }
 
+void win32::setSize(int width, int height) {
+    SetWindowPos(g_hwnd, 0, -1, -1, width, height, SWP_NOZORDER | SWP_NOMOVE | SWP_SHOWWINDOW);
+}
+
 void win32::createMainWindow() {
     registerWindowClass(Win32_WndProc);
 

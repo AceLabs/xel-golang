@@ -44,6 +44,7 @@ int main(int argc, char** argv) {
     xel::mouse::setCallbacks(OnMouseMove, OnMouseButton, OnMouseScroll);
 
     xel_window_setPosition(400,200);
+    xel_window_setSize(1280,800);
 
     xel::loop( OnTick );
 

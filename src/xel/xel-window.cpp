@@ -33,3 +33,8 @@ void xel_window_setPosition(int left, int top) {
 
     xel::win32::setPosition(left,top);
 }
+
+void xel_window_setSize(int width, int height) {
+
+    xel::win32::setSize(width, height);
+}

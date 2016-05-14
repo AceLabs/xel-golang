@@ -1,7 +1,6 @@
 #ifndef XEL_WIN32_GOLANG_XEL_H
 #define XEL_WIN32_GOLANG_XEL_H
 
-#include "xel-enums.h"
 #include "xel-window.h"
 
 // binding friendly function calls
@@ -35,7 +34,7 @@ namespace xel {
     namespace mouse {
 
         void setCallbacks(void (*onMove)(int x, int y),
-                          void (*onButton)(Button button, Action action, int x, int y),
+                          void (*onButton)(int button, int action, int x, int y),
                           void (*onScroll)(int amount));
     }
 }

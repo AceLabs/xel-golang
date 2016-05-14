@@ -5,9 +5,11 @@
 
 #include "../xel-keyboard.h"
 #include "../xel-mouse.h"
+#include "../xel-enums.h"
 
 #include "xel-win32.h"
 #include "xel-win32-handle-messages.h"
+
 
 using namespace xel;
 
@@ -45,22 +47,22 @@ void win32::_::handleMouseEvent(UINT msg, WPARAM wParam, LPARAM lParam) {
         g_onMove(x, y);
 
     else if (msg == WM_LBUTTONDOWN)
-        g_onButton(Button::Left, Action::Down, x, y);
+        g_onButton(Xel_Mouse_Button_Left, Xel_Action_Down, x, y);
 
     else if (msg == WM_LBUTTONUP)
-        g_onButton(Left, Action::Up, x, y);
+        g_onButton(Xel_Mouse_Button_Left, Xel_Action_Up, x, y);
 
     else if (msg == WM_RBUTTONDOWN)
-        g_onButton(Right, Action::Down, x, y);
+        g_onButton(Xel_Mouse_Button_Right, Xel_Action_Down, x, y);
 
     else if (msg == WM_RBUTTONUP)
-        g_onButton(Right, Action::Up, x, y);
+        g_onButton(Xel_Mouse_Button_Right, Xel_Action_Up, x, y);
 
     else if (msg == WM_MBUTTONDOWN)
-        g_onButton(Middle, Action::Down, x, y);
+        g_onButton(Xel_Mouse_Button_Middle, Xel_Action_Down, x, y);
 
     else if (msg == WM_MBUTTONUP)
-        g_onButton(Middle, Action::Up, x, y);
+        g_onButton(Xel_Mouse_Button_Middle, Xel_Action_Up, x, y);
 
     else if (msg == WM_MOUSEWHEEL)
         g_onScroll(GET_WHEEL_DELTA_WPARAM(wParam));

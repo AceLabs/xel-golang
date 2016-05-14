@@ -1,16 +1,11 @@
 #ifndef XEL_WIN32_GOLANG_XEL_ENUMS_H_H
 #define XEL_WIN32_GOLANG_XEL_ENUMS_H_H
 
-namespace xel {
-    namespace mouse {
-        enum Button {
-            Left, Right, Middle
-        };
+extern int Xel_Mouse_Button_Left;
+extern int Xel_Mouse_Button_Right;
+extern int Xel_Mouse_Button_Middle;
 
-        enum Action {
-            Down, Up
-        };
-    }
-}
+extern int Xel_Action_Up;
+extern int Xel_Action_Down;
 
 #endif

@@ -16,7 +16,7 @@ void OnMouseMove(int x, int y) {
 //    printf("mouse move\n");
 }
 
-void OnMouseButton(xel::mouse::Button button, xel::mouse::Action action, int x, int y) {
+void OnMouseButton(int button, int action, int x, int y) {
     printf("mouse button\n");
 }
 

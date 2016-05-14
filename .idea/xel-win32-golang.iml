@@ -8,14 +8,15 @@
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-keyboard.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-core.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-keyboard.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-handle-messages.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-enums.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-handle-messages.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-keyboard-util.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-keyboard-util.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/win32/xel-win32-handle-messages.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-window.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-enums.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-keyboard.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-window.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-mouse.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/xel/xel-mouse.h" isTestSource="false" />

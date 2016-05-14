@@ -9,14 +9,14 @@ namespace xel {
         namespace _ {
 
             void (*g_onMove)(int x, int y) = 0;
-            void (*g_onButton)(Button button, Action action, int x, int y) = 0;
+            void (*g_onButton)(int button, int action, int x, int y) = 0;
             void (*g_onScroll)(int amount) = 0;
         }
     }
 }
 
 void mouse::setCallbacks(  void (*onMove)(int x, int y),
-                           void (*onButton)(Button button, Action action, int x, int y),
+                           void (*onButton)(int button, int action, int x, int y),
                            void (*onScroll)(int amount)) {
 
     g_onMove = onMove;

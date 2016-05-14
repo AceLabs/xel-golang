@@ -12,6 +12,6 @@ set(SOURCE_FILES_XEL_INPUT_H src/xel/xel-keyboard.h src/xel/xel-keyboard-codes.h
 set(SOURCE_FILES_XEL_INPUT_CPP src/xel/xel-keyboard.cpp src/xel/xel-mouse.cpp src/xel/xel-keyboard-codes.cpp)
 
 set(SOURCE_FILES_XEL_WIN32_H src/xel/win32/xel-win32.h src/xel/win32/xel-win32-handle-messages.h)
-set(SOURCE_FILES_XEL_WIN32_CPP src/xel/win32/xel-win32.cpp src/xel/win32/xel-win32-handle-messages.cpp src/xel/win32/xel-win32-keyboard-util.cpp)
+set(SOURCE_FILES_XEL_WIN32_CPP src/xel/win32/xel-win32.cpp src/xel/win32/xel-win32-handle-messages.cpp src/xel/win32/xel-win32-keyboard-util.cpp src/xel/xel-enums.cpp)
 
 add_executable(xel_win32_golang ${SOURCE_FILES} ${SOURCE_FILES_XEL_H} ${SOURCE_FILES_XEL_CPP} ${SOURCE_FILES_XEL_INPUT_H} ${SOURCE_FILES_XEL_INPUT_CPP} ${SOURCE_FILES_XEL_WIN32_H} ${SOURCE_FILES_XEL_WIN32_CPP})
